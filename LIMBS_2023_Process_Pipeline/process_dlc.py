@@ -26,7 +26,7 @@ def get_cubic_curve_length(coeff, x1, x2):
 # cubic_arc_solver() takes in a specific ndarray of coefficients, in the form of ax^3 + bx^2 + cx + d 
 # returned by numpy.polyfit(), a starting x-axis point and a target length desired along the curve, and
 # returns the correct upperbound x value that encapsulates the desired curve length segment. Due to the
-# recursive nature of this function, decimal accuracy is limited. The function cakks get_cubic_curve_length()
+# recursive nature of this function, decimal accuracy is limited. The function calls get_cubic_curve_length()
 # to compute curve length of a specific function.
 
 def cubic_arc_solver(coeff, x1, target):
